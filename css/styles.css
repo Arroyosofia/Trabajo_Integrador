@@ -122,13 +122,6 @@ a {text-decoration: none; color: white
 .item{
    width: fit-content;
 }
-.generos{
-    background-color: #678;
-    color: white;
-    width: 180px;
-    height: 50px;
-    border-radius:9px;
-}
 .fotoparasite{
     width: 400px;
     margin-top: 3%;
@@ -156,5 +149,18 @@ a {text-decoration: none; color: white
     flex-wrap: wrap;
     margin-left: 6%;
 }
-
+.generos{
+    background-color: #678;
+    color: white;
+    width: 180px;
+    height: 50px;
+    border-radius:9px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    display: flexbox;
+}
+.paginageneros{
+    background-color: #2c3440;
+}
 
