@@ -129,4 +129,32 @@ a {text-decoration: none; color: white
     height: 50px;
     border-radius:9px;
 }
+.fotoparasite{
+    width: 400px;
+    margin-top: 3%;
+}
+.parasiteinfo{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(212, 212, 212);   
+}
+.infopelicula{
+    display: block;
+    flex-wrap: wrap;
+    margin-left: 6%;
+}
+
+.fotogame{
+    width: 400px;
+    margin-top: 3%;
+}
+.gameinfo{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(212, 212, 212);   
+}
+.infoserie{
+    display: block;
+    flex-wrap: wrap;
+    margin-left: 6%;
+}
+
 
