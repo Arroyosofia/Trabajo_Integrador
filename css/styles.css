@@ -19,7 +19,7 @@ a {text-decoration: none; color: white
 .peliculaspopulares {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: space-around;
     margin-bottom: 1%;
     margin-top: 1%;
@@ -48,6 +48,7 @@ a {text-decoration: none; color: white
    padding: 10px;
    justify-content: center;
    border-radius:9px;
+   margin: 4px;
 }
 .serie {
     width: 230px;
@@ -120,7 +121,7 @@ a {text-decoration: none; color: white
     font-family: 'Roboto Condensed', sans-serif;
 }
 .item{
-   width: fit-content;
+   margin: 12px;
 }
 .fotoparasite{
     width: 400px;
@@ -192,10 +193,20 @@ a {text-decoration: none; color: white
 }
 .paginageneros{
     background-color: #2c3440;
+
+    
 }
 .contenedorgen{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.fondogeneros{
+    background-color: rgba(0, 0, 0, 0.315);
+    padding: 1%;
+    margin: 2%;
+    border-radius:9px;
+
 }
