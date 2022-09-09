@@ -124,31 +124,57 @@ a {text-decoration: none; color: white
 }
 .fotoparasite{
     width: 400px;
-    margin-top: 3%;
+    height: 75vh;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius:15px;
 }
-.parasiteinfo{
-    font-family: 'Roboto Condensed', sans-serif;
-    color: rgb(212, 212, 212);   
-}
-.infopelicula{
-    display: block;
-    flex-wrap: wrap;
-    margin-left: 6%;
-}
-
 .fotogame{
     width: 400px;
-    margin-top: 3%;
+    height: 75vh;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius:15px;
+}
+
+.parasiteinfo{
+    color: rgb(212, 212, 212);
+    width: 550px; 
+    margin-top: 2%;
 }
 .gameinfo{
-    font-family: 'Roboto Condensed', sans-serif;
-    color: rgb(212, 212, 212);   
+    color: rgb(212, 212, 212);
+    width: 550px; 
+    margin-top: 2%;
+}
+.infopelicula{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 .infoserie{
-    display: block;
+    display: flex;
     flex-wrap: wrap;
-    margin-left: 6%;
+    flex-direction: row;
 }
+.tituloparasite {
+    font-size: 50px;
+}
+.info{
+    font-size: 20px;
+    color: lightgreen;
+}
+.info2 {
+    font-size: 20px;
+    color: #d01e24;
+}
+.sinopsis{
+    font-size: 20px;
+}
+
+
 .generos{
     background-color: #678;
     color: white;
