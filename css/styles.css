@@ -48,6 +48,11 @@ a {text-decoration: none; color: white
    justify-content: center;
    border-radius:9px;
    margin: 4px;
+   transition: width 0.25s ease-out, height 2s ease-out;
+}
+.peli:hover{
+    width: 240px;
+    height: 500px;
 }
 .serie {
     width: 230px;
@@ -58,6 +63,11 @@ a {text-decoration: none; color: white
     justify-content: center;
     border-radius:9px;
     margin: 4px;
+    transition: width 0.25s ease-out, height 2s ease-out;
+}
+.serie:hover{
+    width: 240px;
+    height: 500px;
 }
 .imagenPS{
    width: 100%; 
