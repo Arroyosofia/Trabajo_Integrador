@@ -129,6 +129,9 @@ a {text-decoration: none; color: white
     color: #678;
     font-family: 'Roboto Condensed', sans-serif;
 }
+.nave:hover{
+    color: white;
+}
 .item{
    margin: 12px;
 }
@@ -188,8 +191,6 @@ a {text-decoration: none; color: white
 .sinopsis{
     font-size: 20px;
 }
-
-
 .generos{
     background-color: #678;
     color: white;
@@ -259,7 +260,6 @@ a {text-decoration: none; color: white
     background-color: #678;  
     color: rgb(213, 225, 237);
 }
-
 .seriesdrama{
     display: flex;
     flex-direction: row;
@@ -311,7 +311,11 @@ a {text-decoration: none; color: white
 .botonfav{
     background-color: #2c3440;
     border-radius: 10px;
-    border: none;
+}
+.botonfav:hover{
+    width: 70px;
+    height: 70px;
+    color: black;
 }
 .estrella{
     width: 50px;
@@ -346,5 +350,4 @@ a {text-decoration: none; color: white
      flex-direction: row;
      flex-wrap: wrap;
      justify-content: flex-start;
- 
  }
