@@ -301,8 +301,40 @@ a {text-decoration: none; color: white
 .botonfav{
     background-color: #2c3440;
     border-radius: 10px;
+    border: none;
 }
 .estrella{
     width: 50px;
     padding: 2px;
 }
+.pelihp{ 
+    width: 350PX;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #678;
+    padding: 10px;
+    justify-content: center;
+    border-radius:9px;
+    margin: 4px; 
+}
+.imagenHP{
+    width: 100%; 
+    height: 450px;
+    border-radius:9px;
+ }
+.tituloañoHP{
+    text-align: center;
+    font-size: 15px;
+     color: rgb(213, 225, 237);
+     
+ }
+ .palabra{
+     color: white;
+     font-size: larger;
+     padding: 1px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+ 
+ }
