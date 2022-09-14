@@ -11,9 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="nav1">
+<nav class="nav1">
+    <div class="logoynav">
         <a  href="./index.html">
-            <img class="logo" src="./img index/1.jpg" alt="logo" >
+                <img class="logo" src="./img index/1.jpg" alt="logo" >
         </a>
         <div class="nav2">
             <ul class="nav3">
@@ -23,17 +24,23 @@
                 <li class="item dos">
                     <a class="nave" href="./favorites.html">Favoritos</a> 
                 </li>
+                    </a>
             </ul>
         </div>
-     </nav>
+    </div>
+    <form class="busqueda" action="./search-results.html" method="get">
+        <input class="search" type="text" name="Search" placeholder="Search" value=""> 
+            <button class="bottonsearch" type="submit">Search</button>    
+    </form>
+    </nav>
      
     <div class="fondodrama">
-    <h1 class="generodrama">DRAMA</h1>
-    <h2 class="peliculasdrama">Peliculas</h2>
+    <h2 class="generodrama">PELICULAS DRAMA</h2>
+
     <section class="pelisdrama1">
         <a href="./detail-movie.html">
-            <article class="peli">
-                <img class="imagenPS"  src="./img index/parasite.jpg" alt="parasite">
+            <article class="peliD">
+                <img class="imagenD"  src="./img index/parasite.jpg" alt="parasite">
                 <div class="tituloaño">
                         <p class="titulo">Parasite</p>
                         <p class="año">30-05-2019</p>
@@ -41,8 +48,8 @@
                 </article>
          </a> 
         <a href="./detail-movie.html">
-            <article class="peli">
-                    <img class="imagenPS" src="./img index/joker.webp" alt="joker">
+            <article class="peliD">
+                    <img class="imagenD" src="./img index/joker.webp" alt="joker">
                     <div class="tituloaño">
                         <p class="titulo">Joker</p>
                         <p class="año">4-10-2019</p>
@@ -50,8 +57,8 @@
             </article>
         </a> 
         <a href="./detail-movie.html">
-            <article class="peli">
-                <img class="imagenPS" src="./img index/fightclub.jpg" alt="fightclub">
+            <article class="peliD">
+                <img class="imagenD" src="./img index/fightclub.jpg" alt="fightclub">
                 <div class="tituloaño">
                     <p class="titulo">Fight Club</p>
                     <p class="año">4-11-1999</p>
@@ -59,8 +66,8 @@
             </article>
         </a> 
         <a href="./detail-movie.html">
-            <article class="peli">
-                <img class="imagenPS" src="./img index/midsommar.jpg" alt="midsommar">
+            <article class="peliD">
+                <img class="imagenD" src="./img index/midsommar.jpg" alt="midsommar">
                 <div class="tituloaño">
                     <p class="titulo">Midsommar</p>
                     <p class="año">3-07-2019</p>
@@ -70,8 +77,8 @@
     </section>
     <section class="pelisdrama2">
         <a href="./detail-movie.html">
-            <article class="peli">
-                <img class="imagenPS"  src="./img index/shawshankredemption.jpg" alt="SR">
+            <article class="peliD">
+                <img class="imagenD"  src="./img index/shawshankredemption.jpg" alt="SR">
                 <div class="tituloaño">
                     <p class="titulo">The Shawshank Redemption</p>
                     <p class="año">23-09-1994</p>
@@ -79,8 +86,8 @@
             </article>
         </a>  
         <a href="./detail-movie.html">
-            <article class="peli">
-                <img class="imagenPS" src="./img index/thegodfather.jpg" alt="TG">
+            <article class="peliD">
+                <img class="imagenD" src="./img index/thegodfather.jpg" alt="TG">
                 <div class="tituloaño">
                     <p class="titulo">The Godfather</p>
                     <p class="año">14-03-1972</p>
@@ -88,8 +95,8 @@
             </article>
         </a>
         <a href="./detail-movie.html">
-            <article class="peli">
-                <img class="imagenPS" src="./img index/elpadrino2.jpg" alt="TG2">
+            <article class="peliD">
+                <img class="imagenD" src="./img index/elpadrino2.jpg" alt="TG2">
                 <div class="tituloaño">
                     <p class="titulo">The Godfather Part II</p>
                     <p class="año">20-12-1974</p>
@@ -97,8 +104,8 @@
             </article>
         </a>
         <a href="./detail-movie.html">
-            <article class="peli">
-                <img class="imagenPS" src="./img index/schindlerslist.jpg" alt="SL">
+            <article class="peliD">
+                <img class="imagenD" src="./img index/schindlerslist.jpg" alt="SL">
                 <div class="tituloaño">
                     <p class="titulo">Schindler´s List</p>
                     <p class="año">15-12-1993</p>
@@ -108,10 +115,10 @@
     </section>
 
 
-<h2 class="peliculasdrama">Series</h2>
+<h2 class="generodrama">SERIES DRAMA</h2>
 <section class="seriesdrama">
     <a href="./detail-series.html">
-            <article class="serie">
+            <article class="peliD">
             <img class="imagenPS"  src="./img index/Gameofthrones.jpg" alt="GoT">
                 <div class="tituloaño">
                     <p class="titulo">Game of Thrones</p>
@@ -120,7 +127,7 @@
             </article>
     </a>    
     <a href="./detail-series.html">
-        <article class="serie">
+        <article class="peliD">
             <img class="imagenPS" src="./img index/breakingbad.jpg" alt="BB">
             <div class="tituloaño">
                     <p class="titulo">Breaking Bad</p>
@@ -129,7 +136,7 @@
          </article>
      </a>    
     <a href="./detail-series.html">
-        <article class="serie">
+        <article class="peliD">
             <img class="imagenPS" src="./img index/peakyblinders.jpg" alt="Pb">
             <div class="tituloaño">
                     <p class="titulo">Peaky Blinders</p>
@@ -138,7 +145,7 @@
         </article>
     </a>   
     <a href="./detail-series.html">
-        <article class="serie">
+        <article class="peliD">
             <img class="imagenPS" src="./img index/greys-anatomy.jpg" alt="GA">
             <div class="tituloaño">
                     <p class="titulo">Greys Anatomy</p>
