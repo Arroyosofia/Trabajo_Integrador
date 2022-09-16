@@ -249,14 +249,20 @@ a {text-decoration: none; color: white
 .logoynav{
     display: flex;
 }
+
 .search {
     height: 40px;
-}
-.bottonsearch{
+    border-radius: 10px;
+    border:solid 3px #545454;
+ }
+ .bottonsearch{
     height: 40px;
-    background-color: #678;  
+    background-color: #678; 
     color: rgb(213, 225, 237);
-}
+    border-radius: 10px;
+    border:solid 3px #545454;
+ }
+ 
 .seriesdrama{
     display: flex;
     flex-direction: row;
