@@ -54,6 +54,14 @@ a {text-decoration: none; color: white
     width: 240px;
     height: 500px;
 }
+.pelif:hover{
+    width: 300px;
+    height: 550px;
+}
+.peliD:hover{
+    width: 290px;
+    height: 550px;
+}
 .serie {
     width: 230px;
     display: flex;
@@ -216,8 +224,6 @@ a {text-decoration: none; color: white
     background-color: rgba(0, 0, 0, 0.315);
     padding: 1.5%;
     margin-top: 2%;
-
-    
 }
 .favoritos{
     text-align: center;
@@ -262,6 +268,10 @@ a {text-decoration: none; color: white
     border-radius: 10px;
     border:solid 3px #545454;
  }
+ .bottonsearch:hover{
+    width: 70px;
+    height: 50px;
+ }
  
 .seriesdrama{
     display: flex;
@@ -301,6 +311,7 @@ a {text-decoration: none; color: white
    justify-content: center;
    border-radius:9px;
    margin: 4px;
+   transition: width 0.25s ease-out, height 2s ease-out;
 }
 .imagenpf{
     width: 100%; 
@@ -364,6 +375,7 @@ a {text-decoration: none; color: white
    justify-content: center;
    border-radius:9px;
    margin: 4px;
+   transition: width 0.25s ease-out, height 2s ease-out;
 }
 .imagenD{
    width: 100%; 
