@@ -99,7 +99,6 @@ header{
     font-size: 40px;
     background-color: rgba(0, 0, 0, 0.315);
     padding: 15px;
-    margin-top: 9%;
 }
 .tipodepalabra2{
     text-align: center;
@@ -486,4 +485,10 @@ header{
     .nave{
         font-size: 18px;
     }
+}
+
+.video{
+    margin-top: 9%;
+    width: 100%;
+    height: 550px;
 }
