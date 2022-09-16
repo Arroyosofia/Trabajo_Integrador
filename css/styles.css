@@ -59,6 +59,14 @@ header{
     width: 240px;
     height: 500px;
 }
+.pelif:hover{
+    width: 300px;
+    height: 550px;
+}
+.peliD:hover{
+    width: 290px;
+    height: 550px;
+}
 .serie {
     width: 230px;
     display: flex;
@@ -99,6 +107,7 @@ header{
     font-size: 40px;
     background-color: rgba(0, 0, 0, 0.315);
     padding: 15px;
+    margin-top: 9%;
 }
 .tipodepalabra2{
     text-align: center;
@@ -149,7 +158,7 @@ header{
 }
 .fotoparasite{
     width: 400px;
-    height: 550px;
+    height: 75vh;
     margin-top: 1%;
     margin-left: 3%;
     margin-right: 3%;
@@ -158,7 +167,7 @@ header{
 }
 .fotogame{
     width: 400px;
-    height: 550px;
+    height: 75vh;
     margin-top: 1%;
     margin-left: 3%;
     margin-right: 3%;
@@ -228,8 +237,6 @@ header{
     background-color: rgba(0, 0, 0, 0.315);
     padding: 1.5%;
     margin-top: 2%;
-
-    
 }
 .favoritos{
     text-align: center;
@@ -257,19 +264,28 @@ header{
 .busqueda {
     align-self: center;
     margin-right: 20px;
-
 }
 .logoynav{
     display: flex;
 }
+
 .search {
     height: 40px;
-}
-.bottonsearch{
+    border-radius: 10px;
+    border:solid 3px #545454;
+ }
+ .bottonsearch{
     height: 40px;
-    background-color: #678;  
+    background-color: #678; 
     color: rgb(213, 225, 237);
-}
+    border-radius: 10px;
+    border:solid 3px #545454;
+ }
+ .bottonsearch:hover{
+    width: 70px;
+    height: 50px;
+ }
+ 
 .seriesdrama{
     display: flex;
     flex-direction: row;
@@ -308,6 +324,7 @@ header{
    justify-content: center;
    border-radius:9px;
    margin: 4px;
+   transition: width 0.25s ease-out, height 2s ease-out;
 }
 .imagenpf{
     width: 100%; 
@@ -371,124 +388,406 @@ header{
    justify-content: center;
    border-radius:9px;
    margin: 4px;
+   transition: width 0.25s ease-out, height 2s ease-out;
 }
 .imagenD{
    width: 100%; 
    height: 400px;
    border-radius:9px;
-}
-@media (max-width: 850px) {
-    .tipodepalabra {
-        margin-top: 15%;
+   * {box-sizing: border-box;}
+ 
+   body {margin: 0;
+       
+       background-color: #2c3440;
+       color: white;
+       font-family: 'Roboto', sans-serif;
+   }        
+    
+   ul, ol {padding: 0;}
+    
+   li {list-style-type: none;}
+   
+    
+   a {text-decoration: none; color: white
+   }
+   header{
+       position: fixed;
+       background-color: #2c3440;
+       width: 100%;
+       top: 0;
+   }
+   .peliculaspopulares {
+       display: flex;
+       flex-direction: row;
+       flex-wrap:wrap;
+       justify-content: space-around;
+       margin-bottom: 1%;
+       margin-top: 1%;
+       
+   }
+   .seriespopulares{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-around;
+       margin-bottom: 1%;
+       margin-top: 1%;
+   }
+   .pelisvaloradas{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-around;
+       margin-top: 1%;
+   }
+   .peli{ 
+      width: 230px;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #678;
+      padding: 10px;
+      justify-content: center;
+      border-radius:9px;
+      margin: 4px;
+      transition: width 0.25s ease-out, height 2s ease-out;
+   }
+   .peli:hover{
+       width: 240px;
+       height: 500px;
+   }
+   .pelif:hover{
+       width: 300px;
+       height: 550px;
+   }
+   .peliD:hover{
+       width: 290px;
+       height: 550px;
+   }
+   .serie {
+       width: 230px;
+       display: flex;
+       flex-wrap: wrap;
+       background-color:#678;
+       padding: 10px;
+       justify-content: center;
+       border-radius:9px;
+       margin: 4px;
+       transition: width 0.25s ease-out, height 2s ease-out;
+   }
+   .serie:hover{
+       width: 240px;
+       height: 500px;
+   }
+   .imagenPS{
+      width: 100%; 
+      height: 330px;
+      border-radius:9px;
+   }
+   .tituloaño{
+       text-align: center;
+       font-size: 15px;
+       color: rgb(213, 225, 237);
+       
+   }
+   .palabra{
+       color: white;
+       font-size: larger;
+       padding: 1px;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: flex-start;
+   }
+   .tipodepalabra{
+       text-align: center;
+       font-size: 40px;
+       background-color: rgba(0, 0, 0, 0.315);
+       padding: 15px;
+       margin-top: 9%;
+   }
+   .tipodepalabra2{
+       text-align: center;
+       font-size: 40px;
+       background-color: rgba(0, 0, 0, 0.315);
+       padding: 15px;
+   }
+   .nombres{
+       color: white;
+       text-align: center;
+       font-weight: lighter;
+   }
+   .logo{
+       width: 230px;
+       height: 90px;
+       margin-left: 5%;
+       margin-top: 6%;
+   }
+   
+   .nav1 {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+   }
+   .nav2{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       align-content: center;
+       width: fit-content;
+       margin-left: 4%;
+   }
+   .nav3{
+       display: flex;
+       flex-direction: row;
+   }
+   .nave {
+       font-size: 25px;
+       font-weight: bold;
+       color: #678;
+       font-family: 'Roboto Condensed', sans-serif;
+   }
+   .nave:hover{
+       color: white;
+   }
+   .item{
+      margin: 12px;
+   }
+   .fotoparasite{
+       width: 400px;
+       height: 75vh;
+       margin-top: 1%;
+       margin-left: 3%;
+       margin-right: 3%;
+       margin-bottom: 1%;
+       border-radius:15px;
+   }
+   .fotogame{
+       width: 400px;
+       height: 75vh;
+       margin-top: 1%;
+       margin-left: 3%;
+       margin-right: 3%;
+       border-radius:15px;
+       margin-bottom: 1%;
+   }
+   
+   .parasiteinfo{
+       color: rgb(212, 212, 212);
+       width: 550px; 
+       margin-top: 1%;
+       margin-bottom: 1%;
+   }
+   .gameinfo{
+       color: rgb(212, 212, 212);
+       width: 550px; 
+       margin-top: 2%;
+   }
+   .infopelicula{
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+       background-color: rgba(0, 0, 0, 0.315);
+   }
+   .infoserie{
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+       background-color: rgba(0, 0, 0, 0.315);
+   }
+   .tituloparasite {
+       font-size: 50px;
+   }
+   .info{
+       font-size: 20px;
+       color: lightgreen;
+   }
+   .info2 {
+       font-size: 20px;
+       color: #d01e24;
+   }
+   .sinopsis{
+       font-size: 20px;
+   }
+   .generos{
+       background-color: #678;
+       color: white;
+       width: 180px;
+       height: 50px;
+       border-radius:9px;
+       text-align: center;
+       padding: 20px;
+       margin: 20px;
+   }
+   
+   .paginageneros{
+       background-color: #2c3440;
+   }
+   .contenedorgen{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+   
+   .fondogeneros{
+       background-color: rgba(0, 0, 0, 0.315);
+       padding: 1.5%;
+       margin-top: 2%;
+   }
+   .favoritos{
+       text-align: center;
+       display: flex;
+       justify-content: center;
+       font-family: 'Roboto Condensed', sans-serif;
+   }
+   .pelisdrama1{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-around;
+   }
+   .pelisdrama2{
+       display: flex;
+       flex-direction: row;
+       flex-wrap:wrap;
+       justify-content: space-around;
+   }
+   .imagenpf{
+       width: 100%; 
+      height: 400px;
+      border-radius:9px;
+   }
+   .busqueda {
+       align-self: center;
+       margin-right: 20px;
+   }
+   .logoynav{
+       display: flex;
+   }
+   
+   .search {
+       height: 40px;
+       border-radius: 10px;
+       border:solid 3px #545454;
     }
-    .fotoparasite {
-        margin-top: 20px;
-        justify-content: center;
-        height: 550px;
+    .bottonsearch{
+       height: 40px;
+       background-color: #678; 
+       color: rgb(213, 225, 237);
+       border-radius: 10px;
+       border:solid 3px #545454;
     }
-    .sinopsis {
-        text-align: center;
-        font-size: 15px;
-    }
-    .tituloparasite{
-        text-align: center;
-        font-size: 30px;
-    }
-    .titulogame{
-        text-align: center;
-        font-size:30px ;
-    }
-    .parasiteinfo{
-        width: 300px;
-    }
-    .gameinfo {
-        width: 300px;
+    .bottonsearch:hover{
+       width: 70px;
+       height: 50px;
     }
     
-}
-@media (max-width:700px){
-    .busqueda {
-        display: none;
+   .seriesdrama{
+       display: flex;
+       flex-direction: row;
+       flex-wrap:wrap;
+       justify-content: space-around;
+       
+   }
+   .generodrama{
+       text-align: center;
+       font-size: 40px;
+   }
+   .peliculasdrama{
+       margin-left: 10%;
+   }
+   .fondodrama{
+       background-color: rgba(0, 0, 0, 0.315);
+       padding: 1%;
+       margin: 2%;
+       border-radius:9px;
+       margin-left: 8%;
+       margin-right: 8%;
+   }
+   .pelifavoritas{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-around;
+       margin-top: 1%;
+   }
+   .pelif {
+       width: 280px;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #678;
+      padding: 10px;
+      justify-content: center;
+      border-radius:9px;
+      margin: 4px;
+      transition: width 0.25s ease-out, height 2s ease-out;
+   }
+   .imagenpf{
+       width: 100%; 
+      height: 400px;
+      border-radius:9px;
+   }
+   .iconos{
+       text-align: center;
+       font-size: 20px;
+       margin-top: 0px;
+   }
+   .botonfav{
+       background-color: #2c3440;
+       border-radius: 10px;
+   }
+   .botonfav:hover{
+       width: 70px;
+       height: 70px;
+       color: black;
+   }
+   .estrella{
+       width: 50px;
+       padding: 2px;
+   }
+   .pelihp{ 
+       width: 350PX;
+       display: flex;
+       flex-wrap: wrap;
+       background-color: #678;
+       padding: 10px;
+       justify-content: center;
+       border-radius:9px;
+       margin: 4px; 
+   }
+   .imagenHP{
+       width: 100%; 
+       height: 450px;
+       border-radius:9px;
     }
-    .parasiteinfo {
-        width: 200px;
-    }
-    .gameinfo {
-        width: 200px;
-    }
-}
-@media(max-width: 500px){
-    .peli {
-         width: 330px;
-         margin-bottom: 20px;
-    }
-    .tipodepalabra {
-        margin-top: 30%;
-        font-size: 25px;
-    }
-    .tipodepalabra2{
-        font-size: 25px;
-    }
-    .imagenPS{
-     height: 440px;
+   .tituloañoHP{
+       text-align: center;
+       font-size: 15px;
+        color: rgb(213, 225, 237);
+        
     }
     .palabra{
-     justify-content: center;
+        color: white;
+        font-size: larger;
+        padding: 1px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
-    .serie {
-        width: 330px;
-        margin-bottom: 20px;
-    }
-    .tituloaño {
-     font-size: 25px;
-    }
-    .item {
-        margin-left: 5px;
-    }
-    .tituloparasite{
-        text-align: center;
-        font-size: 30px;
-    }
-    .titulogame{
-        text-align: center;
-        font-size:30px ;
-    }
-    .sinopsis {
-        text-align: center;
-        font-size: 15px;
-    }
-    .fotogame{
-        margin-top: 20px;
-    }
-    .fotoparasite {
-        margin-top: 20px;
-        justify-content: center;
-    }
-    .gameinfo {
-        padding: 30px;
-        width: 550px;
-    }
-    .parasiteinfo{
-        padding: 30px;
-        width: 550px;
-    }
-    .infopelicula{
-        justify-content: center;
-    }
-    .infoserie{
-        justify-content: center;
-    }
-    .logoynav{
-        width: 100%;
-        justify-content: space-between;
-    }
-    .nave{
-        font-size: 18px;
-    }
-}
-
-.video{
-    margin-top: 9%;
-    width: 100%;
-    height: 550px;
-}
+   .peliD{
+      width: 280px;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #678;
+      padding: 10px;
+      justify-content: center;
+      border-radius:9px;
+      margin: 4px;
+      transition: width 0.25s ease-out, height 2s ease-out;
+   }
+   .imagenD{
+      width: 100%; 
+      height: 400px;
+      border-radius:9px;
+   }
