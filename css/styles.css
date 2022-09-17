@@ -532,4 +532,8 @@ header{
         padding-top: 10px;
         padding-bottom: 20px;
     }
+    .generodrama {
+        margin-top: 30%;
+        font-size:30px
+    }
 }
