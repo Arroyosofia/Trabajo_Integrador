@@ -136,7 +136,7 @@ header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
     width: fit-content;
     margin-left: 4%;
 }
