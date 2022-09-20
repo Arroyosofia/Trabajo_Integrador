@@ -93,15 +93,7 @@ header{
     color: rgb(213, 225, 237);
     
 }
-.palabra{
-    color: white;
-    font-size: larger;
-    padding: 1px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
+
 .tipodepalabra{
     text-align: center;
     font-size: 40px;
@@ -381,16 +373,8 @@ header{
     font-size: 15px;
     color: rgb(213, 225, 237);
      
- }
- .palabra{
-     color: white;
-     font-size: larger;
-     padding: 1px;
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: flex-start;
- }
+}
+
 .peliD{
    width: 280px;
    display: flex;
@@ -413,7 +397,6 @@ header{
     }
     .fotoparasite {
         margin-top: 20px;
-        justify-content: center;
         height: 550px;
     }
     .sinopsis {
@@ -470,9 +453,6 @@ header{
     }
     .imagenPS{
      height: 440px;
-    }
-    .palabra{
-     justify-content: center;
     }
     .serie {
         width: 330px;
