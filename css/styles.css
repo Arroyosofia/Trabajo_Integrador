@@ -197,7 +197,15 @@ header{
     font-size: 20px;
     color: lightgreen;
 }
+.infogen1{
+    font-size: 20px;
+    color: lightgreen;
+}
 .info2 {
+    font-size: 20px;
+    color: #d01e24;
+}
+.infogen {
     font-size: 20px;
     color: #d01e24;
 }
@@ -219,6 +227,12 @@ header{
     background-color: #2c3440;
 }
 .contenedorgen{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedorgen1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -290,6 +304,11 @@ header{
     font-size: 40px;
     margin-top: 80px;
 }
+.generodrama1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 80px;
+}
 .titulofav{
     text-align: center;
     font-size: 40px;
@@ -313,6 +332,13 @@ header{
     margin-top: 7%;
 }
 .pelifavoritas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1%;
+}
+.searchresults{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
