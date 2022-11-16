@@ -87,7 +87,7 @@ fetch(route)
         let serie = data.results
         let contenedor1 = document.querySelector('.seriesdrama')
         for (let i = 0 ; i < 8; i++) {
-            contenedor1.innerHTML += `<a href="./detail-movie.html?id=${serie[i].id}">
+            contenedor1.innerHTML += `<a href="./detail-series.html?id=${serie[i].id}">
             <article class="peliD">
                 <img class="imagenD"  src="https://image.tmdb.org/t/p/w500/${serie[i].poster_path}"alt="foto">
                 <div class="tituloaño">
@@ -102,4 +102,4 @@ fetch(route)
     })
 
     // como hacemos si tenemos dos articulos y laS SERIES Y PELICULAS NO COMPARTEN TODOS LOS GENEROS
-    // no toma el id del array genres y no puedo poner el nombre del genero en el titulo
+   

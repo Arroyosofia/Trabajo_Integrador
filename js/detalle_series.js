@@ -40,7 +40,7 @@ fetch(url)
         for (let i=0 ; i < data.genres.length; i++){
             lista.innerHTML +=  ` <a href="./detail-generes.html?id=${data.genres[i].id}">${data.genres[i].name} </a>`
         }
-
+        
     })
     .catch(function(error){
         console.log(error);
