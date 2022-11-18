@@ -28,7 +28,7 @@ fetch(url)
                 <li ><strong class="info2"> Fecha de estreno: </strong>${data.first_air_date}</li>
                 <li class="infogen"><strong class="info2">Generos:</strong></li>
                 <li><strong class="info2"> Cantidad de temporadas:</strong> ${data.number_of_seasons}</li>
-                <li><strong class="info2" >Plataformas:</strong></li>
+                <li class="infonet"><strong class="info2" >Plataformas: </strong></li>
              </ul>
              <form action="./favorites.html" method="get"> 
               <button class="botonfav" type="button">
@@ -39,6 +39,10 @@ fetch(url)
         let lista = document.querySelector('.infogen')
         for (let i=0 ; i < data.genres.length; i++){
             lista.innerHTML +=  ` <a href="./detail-generes.html?id=${data.genres[i].id}">${data.genres[i].name} </a>`
+        }
+        let plataforma = document.querySelector('.infonet')
+        for (let i = 0;i<data.networks.length; i++ ){
+            plataforma.innerHTML += data.networks[i].name 
         }
         
     })

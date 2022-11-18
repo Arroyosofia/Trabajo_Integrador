@@ -199,8 +199,13 @@ header{
 }
 .infogen1{
     font-size: 20px;
-    color: lightgreen;
+    color: rgb(212, 212, 212);;
 }
+.infonet{
+    font-size: 20px;
+    color: rgb(212, 212, 212);;
+}
+
 .info2 {
     font-size: 20px;
     color: #d01e24;
@@ -209,6 +214,7 @@ header{
     font-size: 20px;
     color: #d01e24;
 }
+
 .sinopsis{
     font-size: 20px;
 }
@@ -270,7 +276,9 @@ header{
 .busqueda {
     align-self: center;
     margin-right: 20px;
+    
 }
+
 .logoynav{
     display: flex;
 }
@@ -307,7 +315,7 @@ header{
 .generodrama1{
     text-align: center;
     font-size: 40px;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .titulofav{
     text-align: center;
@@ -542,4 +550,8 @@ header{
         margin-top: 30%;
         font-size:30px
     }
+}
+.logotmdb {
+    width: 50px;
+    margin-right: 1%;
 }
