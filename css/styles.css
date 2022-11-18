@@ -555,3 +555,18 @@ header{
     width: 50px;
     margin-right: 1%;
 }
+
+.recomendaciones{
+    display: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.titulorec{
+    text-align: center;
+    font-size: 40px;
+    padding: 15px;
+    display: none;
+}
