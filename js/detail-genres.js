@@ -101,5 +101,22 @@ fetch(route)
         console.log(error);
     })
 
-    // como hacemos si tenemos dos articulos y laS SERIES Y PELICULAS NO COMPARTEN TODOS LOS GENEROS
-   
+// validacion de formulario
+let buscador  = document.querySelector('.busqueda')
+let formulario = document.querySelector('form')
+let campoEvaluar = document.querySelector("[name = 'Search']")
+let alert = document.querySelector('.alert')
+
+formulario.addEventListener('submit', function(evento){
+    evento.preventDefault()
+
+    if (campoEvaluar.value == ""){
+        alert.innerText = 'El campo no debe estar vacio'
+    }
+    else if (campoEvaluar.value.length < 3) {
+        alert.innerText = 'Tenes que ingresar mas de 3 caracteres'   
+    }
+    else {
+        this.submit()
+    }
+})

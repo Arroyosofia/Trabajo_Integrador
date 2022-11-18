@@ -30,12 +30,14 @@ fetch(url)
             <li ><strong class="info"> Fecha de estreno: </strong>${data.release_date}</li>
             <li class="infonet"><strong class="info"> Plataformas: </strong></li>
             <li class="infogen1"><strong class="info">Generos:</strong></li> 
-            <li><strong class="info "> Duracion:</strong> ${data.runtime}</li>
-            <li><strong class="info rec"> Ver Recomendaciones</strong></li>
+            <li><strong class="info"> Duracion:</strong> ${data.runtime}</li>
+            <li class="rec"><strong class="info"> Ver Recomendaciones</strong></li>
          </ul>
          <button class="botonfav" type="button">
-            <img src="./fav/white-star-icon-13.png" class="estrella"> 
+            <a href="./favorites.html?id=${data.id}"> <img src="./fav/white-star-icon-13.png" class="estrella"> </a>
          </button> `
+
+        
 
         let lista = document.querySelector('.infogen1')
         for (let i = 0; i < data.genres.length; i++) {
@@ -48,9 +50,11 @@ fetch(url)
                 console.log(data);
                 network = data.results
                 let plataforma = document.querySelector('.infonet')
-                     for (let i=0 ;i<1; i++ ){
-                        plataforma.innerHTML += network.US.flatrate[0].provider_name 
-                        }
+                if (network.AR !== undefined) {
+                    plataforma.innerHTML += `${network.AR.flatrate[0].provider_name}`
+                } else {
+                    plataforma.innerHTML += "No esta disponible en Argentina"
+                }
             })
             .catch(function (error) {
                 console.log(error);
@@ -76,6 +80,7 @@ fetch(ruta)
         main.style.display = "none"
         titulorec.style.display = "block"
         container.style.display = "flex"
+
         for (let i = 0 ; i < 5; i++) {
             
             container.innerHTML += `
@@ -90,7 +95,51 @@ fetch(ruta)
             </a>`
 
 }})
-    
+
+// favoritos
+// 1 - crear un array para ir completando con datos
+let favoritos = [];
+
+// 2 - recupero datos
+let recuperoStorage = localStorage.getItem('favoritos');
+
+//3 - chequeo y agrego info del localStorage en el array
+
+if (recuperoStorage != null) {
+    // transformar el dato en formato JSON a un tipo de dato que podamos trabajar en java
+    favoritos = JSON.parse(recuperoStorage);
+}
+// 4 - deberia capturar algun elemento del Dom q se refiere a favoritod
+
+let link = document.querySelector('.botonfav')
+// 5 chequear q el id este en el array para poder cambiar el texto al usuario
+if (favoritos.includes(id)){
+   link.innerText = 'sacar de favoritos' 
+}
+// 6 - cuando el ususario haga clicj en agregar a favoritos --> agregar ese id dentro d
+
+// definir un evento para ese elemento del dom
+link.addEventListener('click', function(e){
+    //evito comportamiento por default
+    e.preventDefault();
+    if (favoritos.includes(id)){
+        // si el id esta en el array
+        let indice = favoritos.indexOf(id)
+        // borar a partir de este numero indice , un elemento
+        favoritos.splice(indice, 1);
+        link.innerText = 'Agregar a favoritos'
+    }
+    else {
+        //agregar a favoritos
+        favoritos.push(id);
+        link.innerText = 'Sacar de favoritos'
+    }
+    // pasar de un array a transforamrlo en JSON para guardarlo en el localStorage
+
+    let personajesFavoritosToString = JSON.stringify(favoritos)
+    localStorage.setItem('favoritos', personajesFavoritosToString)
+    console.log(localStorage)
+}) 
     
 
     

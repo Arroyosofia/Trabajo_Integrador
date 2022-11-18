@@ -95,14 +95,14 @@ let alert = document.querySelector('.alert')
 
 formulario.addEventListener('submit', function(evento){
     evento.preventDefault()
+
     if (campoEvaluar.value == ""){
         alert.innerText = 'El campo no debe estar vacio'
     }
     else if (campoEvaluar.value.length < 3) {
-        alert.innerText = 'Tenes que ingresar mas de 3 caracteres'
-        
+        alert.innerText = 'Tenes que ingresar mas de 3 caracteres'   
     }
     else {
-        
+        this.submit()
     }
 })
