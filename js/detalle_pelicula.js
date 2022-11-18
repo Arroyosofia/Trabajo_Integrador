@@ -128,11 +128,13 @@ link.addEventListener('click', function(e){
         // borar a partir de este numero indice , un elemento
         favoritos.splice(indice, 1);
         link.innerText = 'Agregar a favoritos'
+        link.style.color = "#ccc"
     }
     else {
         //agregar a favoritos
         favoritos.push(id);
         link.innerText = 'Sacar de favoritos'
+        link.style.color = "#ccc"
     }
     // pasar de un array a transforamrlo en JSON para guardarlo en el localStorage
 
