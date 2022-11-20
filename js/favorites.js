@@ -54,7 +54,7 @@ function buscarYMostrarFavoritos(id) {
 
 // series favoritas
 
-/* if (serieSeleccionados == null || serieSeleccionados.length == 0) {
+if (serieSeleccionados == null || serieSeleccionados.length == 0) {
     seccion.innerHTML += `<p> No hay series favoritas seleccionados </p>`
 }
 else {
@@ -72,17 +72,17 @@ function buscarYMostrarFavoritos(id) {
         })
         .then(function (data) {
             console.log(data);
-            seccionSerie.innerHTML += `<a href="./detail-series.html?id=${data.id}">
+            seccionSerie.innerHTML += `<a href="./detail-movie.html?id=${data.id}">
             <article class="peliD">
                 <img class="imagenD"  src="https://image.tmdb.org/t/p/w500/${data.poster_path}"alt="foto">
                 <div class="tituloaño">
                         <p class="titulo">${data.name}</p>
-                        <p class="año">${data.first_air_date</p>
+                        <p class="año">${data.first_air_date}</p>
                 </div>
                 </article>
-            </a> ` 
-
-         })
+            </a> `
+        
+        })
         .catch(function (e) {
             console.log(e)
-        })}  */
+        })} 
