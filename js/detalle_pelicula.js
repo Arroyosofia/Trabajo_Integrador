@@ -31,7 +31,7 @@ fetch(url)
             <li class="infonet"><strong class="info"> Plataformas: </strong></li>
             <li class="infogen1"><strong class="info">Generos:</strong></li> 
             <li><strong class="info"> Duracion:</strong> ${data.runtime}</li>
-            <li class="rec"><strong class="info"> Ver Recomendaciones</strong></li>
+            <li ><strong class="info rec"> Ver Recomendaciones</strong></li>
          </ul>
          <button class="botonfav" type="button">
             <a href="./favorites.html?id=${data.id}"> <img src="./fav/white-star-icon-13.png" class="estrella"> </a>
@@ -59,9 +59,10 @@ fetch(url)
             .catch(function (error) {
                 console.log(error);
             })
-            //no funciona bien lo de plataformas pq algunas peliuclas no tienen plataformas o no estan en el array
+            
     })
 
+//boton de sugeridos
 let ruta = `https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=5d8d9a4eaf9e1d9b0b7f27344d895a3e`
 
 fetch(ruta)
@@ -102,7 +103,7 @@ let favoritos = [];
 
 // 2 - recupero datos
 let recuperoStorage = localStorage.getItem('favoritos');
-
+console.log(recuperoStorage)
 //3 - chequeo y agrego info del localStorage en el array
 
 if (recuperoStorage != null) {
@@ -138,8 +139,8 @@ link.addEventListener('click', function(e){
     }
     // pasar de un array a transforamrlo en JSON para guardarlo en el localStorage
 
-    let personajesFavoritosToString = JSON.stringify(favoritos)
-    localStorage.setItem('favoritos', personajesFavoritosToString)
+    let pelisFavoritasToString = JSON.stringify(favoritos)
+    localStorage.setItem('favoritos', pelisFavoritasToString)
     console.log(localStorage)
 }) 
     
