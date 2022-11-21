@@ -55,7 +55,7 @@ function buscarYMostrarFavoritos(id) {
 // series favoritas
 
 if (serieSeleccionados == null || serieSeleccionados.length == 0) {
-    seccion.innerHTML += `<p> No hay series favoritas seleccionados </p>`
+    seccionSerie.innerHTML += `<p> No hay series favoritas seleccionados </p>`
 }
 else {
     // pedir a la api los datos de todos los ids del array de series elegidas

@@ -30,13 +30,12 @@ fetch(url)
                 <li><strong class="info2"> Cantidad de temporadas:</strong> ${data.number_of_seasons}</li>
                 <li class="infonet"><strong class="info2" >Plataformas: </strong></li>
                 <li><strong class="info2 rec"> Ver Recomendaciones</strong></li>
-             </ul>
-             <form action="./favorites.html" method="get"> 
-              <button class="botonfav" type="button">
-                <img src="./fav/white-star-icon-13.png" class="estrella"> 
-              </button>  
-             </form>  
-          </div`
+            </ul>
+            <button class="botonfavserie" type="button">
+                <a href="./favorites.html?id=${data.id}"> <img src="./fav/white-star-icon-13.png" class="estrella"> </a>
+            </button>`
+    
+
         let lista = document.querySelector('.infogen')
         for (let i=0 ; i < data.genres.length; i++){
             lista.innerHTML +=  ` <a href="./detail-generes.html?id=${data.genres[i].id}">${data.genres[i].name} </a>`
@@ -51,7 +50,7 @@ fetch(url)
         console.log(error);
     })
 
-// el boton de sugeridos
+// el link de sugeridos
 let ruta = `https://api.themoviedb.org/3/tv/${id}/recommendations?api_key=5d8d9a4eaf9e1d9b0b7f27344d895a3e&language=es-ES` 
 
 fetch(ruta)
@@ -102,15 +101,15 @@ if (recuperoStorage != null) {
 }
 // 4 - deberia capturar algun elemento del Dom q se refiere a favoritod
 
-let boton = document.querySelector(".botonfav")
+let link = document.querySelector('.botonfavserie')
 // 5 chequear q el id este en el array para poder cambiar el texto al usuario
 if (SerieFav.includes(id)){
-   boton.innerText = 'sacar de favoritos' 
+   link.innerText = 'sacar de favoritos' 
 }
 // 6 - cuando el usuario haga click en agregar a favoritos --> agregar ese id dentro d
 
 // definir un evento para ese elemento del dom
-boton.addEventListener('click', function(e){
+link.addEventListener('click', function(e){
     //evito comportamiento por default
     e.preventDefault();
     if (SerieFav.includes(id)){
@@ -118,14 +117,14 @@ boton.addEventListener('click', function(e){
         let indice = SerieFav.indexOf(id)
         // borar a partir de este numero indice , un elemento
         SerieFav.splice(indice, 1);
-        boton.innerText = 'Agregar a favoritos'
-        boton.style.color = "#ccc"
+        link.innerText = 'Agregar a favoritos'
+        link.style.color = "#ccc"
     }
     else {
         //agregar a SerieFav
         SerieFav.push(id);
-        boton.innerText = 'Sacar de favoritos'
-        boton.style.color = "#ccc"
+        link.innerText = 'Sacar de favoritos'
+        link.style.color = "#ccc"
     }
     // pasar de un array a transforamrlo en JSON para guardarlo en el localStorage
 
