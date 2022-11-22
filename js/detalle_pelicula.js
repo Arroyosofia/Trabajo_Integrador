@@ -34,7 +34,7 @@ fetch(url)
             <li ><strong class="info rec"> Ver Recomendaciones</strong></li>
          </ul>
          <button class="botonfav" type="button">
-            <a href="./favorites.html?id=${data.id}"> <img src="./fav/white-star-icon-13.png" class="estrella"> </a>
+            <img src="./fav/white-star-icon-13.png" class="estrella">
          </button> `
 
         
@@ -43,24 +43,28 @@ fetch(url)
         for (let i = 0; i < data.genres.length; i++) {
             lista.innerHTML += ` <a href="./detail-generes.html?id=${data.genres[i].id}">${data.genres[i].name} </a>`
         }
-        ruta = `https://api.themoviedb.org/3/movie/${id}/watch/providers?api_key=5d8d9a4eaf9e1d9b0b7f27344d895a3e`
-        fetch(ruta)
-            .then((response) => response.json())
-            .then(function (data) {
-                console.log(data);
-                network = data.results
-                let plataforma = document.querySelector('.infonet')
-                if (network.AR !== undefined) {
-                    plataforma.innerHTML += `${network.AR.flatrate[0].provider_name}`
-                } else {
-                    plataforma.innerHTML += "No esta disponible en Argentina"
-                }
-            })
-            .catch(function (error) {
-                console.log(error);
-            })
+        
             
     })
+ruta1 = `https://api.themoviedb.org/3/movie/${id}/watch/providers?api_key=5d8d9a4eaf9e1d9b0b7f27344d895a3e`
+    fetch(ruta1)
+        .then((response) => response.json())
+        .then(function (data) {
+            console.log(data);
+            network = data.results
+            let plataforma = document.querySelector('.infonet')
+            if (network.AR !== undefined) {
+                plataforma.innerHTML += `${network.AR.flatrate[0].provider_name}`
+            } else {
+                plataforma.innerHTML += "No esta disponible en Argentina"
+            }
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
+
+
+
 
 //boton de sugeridos
 let ruta = `https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=5d8d9a4eaf9e1d9b0b7f27344d895a3e`

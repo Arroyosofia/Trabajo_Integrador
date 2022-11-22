@@ -85,4 +85,4 @@ function buscarYMostrarFavoritos(id) {
         })
         .catch(function (e) {
             console.log(e)
-        })} 
+        })}  
