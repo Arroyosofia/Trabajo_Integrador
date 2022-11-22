@@ -35,7 +35,8 @@ fetch(url)
          </ul>
          <button class="botonfav" type="button">
             <img src="./fav/white-star-icon-13.png" class="estrella">
-         </button> `
+         </button> 
+        </div>`
 
         
 
