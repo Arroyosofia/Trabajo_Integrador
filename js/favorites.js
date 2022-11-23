@@ -52,18 +52,18 @@ function buscarYMostrarFavoritos(id) {
             console.log(e)
         })}
 
-// series favoritas
+// series favoritas --> ocultamos esta parte porque la parte de favoritos series saltaba error
 
-if (serieSeleccionados == null || serieSeleccionados.length == 0) {
+/* if (serieSeleccionados == null || serieSeleccionados.length == 0) {
     seccionSerie.innerHTML += `<p> No hay series favoritas seleccionados </p>`
 }
 else {
     // pedir a la api los datos de todos los ids del array de series elegidas
     for (let i = 0; i < serieSeleccionados.length; i++) {
-        buscarYMostrarFavoritos(serieSeleccionados[i])
+        buscarYMostrarFavoritos2(serieSeleccionados[i])
     }
 }
-function buscarYMostrarFavoritos(id) {
+function buscarYMostrarFavoritos2(id) {
     // fetch
     let url = `https://api.themoviedb.org/3/tv/${id}?api_key=5d8d9a4eaf9e1d9b0b7f27344d895a3e&language=es-ES`
     fetch(url)
@@ -85,4 +85,4 @@ function buscarYMostrarFavoritos(id) {
         })
         .catch(function (e) {
             console.log(e)
-        })}  
+        })}   */

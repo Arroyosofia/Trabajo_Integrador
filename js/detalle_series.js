@@ -19,22 +19,21 @@ fetch(url)
         let section = document.querySelector('.infoserie')
 
         section.innerHTML += `
-        <img class="fotogame" src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt="foto">
+        <img class="fotogame" src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt="foto"> 
         <div class="gameinfo">
-        <h1 class="titulogame">${data.name}</h1>
-        <div><p class="sinopsis">${data.overview}</p></div>
-        <ul>
-            <li><strong class="info2">Calificacion:</strong> ${data.vote_average} </li>
-            <li ><strong class="info2"> Fecha de estreno: </strong>${data.first_air_date}</li>
-            <li class="infonet"><strong class="info2"> Plataformas: </strong></li>
-            <li class="infogen"><strong class="info2">Generos:</strong></li> 
-            <li><strong class="info2"> Cantidad de temporadas: </strong> ${data.number_of_seasons}</li>
-            <li ><strong class="info2 rec"> Ver Recomendaciones</strong></li>
-         </ul>
-         <button class="botonfav" type="button">
-            <img src="./fav/white-star-icon-13.png" class="estrella">
-         </button>
-         </div>`
+            <h1 class="titulogame">${data.original_name}</h1>
+            <div><p class="sinopsis">${data.overview}</p></div>
+            <ul>
+                <li><strong class="info2">Calificacion:</strong> ${data.vote_average}</li>
+                <li ><strong class="info2"> Fecha de estreno: </strong>${data.first_air_date}</li>
+                <li class="infogen"><strong class="info2">Generos:</strong></li>
+                <li><strong class="info2"> Cantidad de temporadas:</strong> ${data.number_of_seasons}</li>
+                <li class="infonet"><strong class="info2" >Plataformas: </strong></li>
+                <li><strong class="info2 rec"> Ver Recomendaciones</strong></li>
+            </ul>
+            <button class="botonfav" type="button">
+                <a href="./favorites.html?id=${data.id}"> <img src="./fav/white-star-icon-13.png" class="estrella"> </a>
+            </button>`
     
 
         let lista = document.querySelector('.infogen')
@@ -102,7 +101,7 @@ if (recuperoStorage != null) {
 }
 // 4 - deberia capturar algun elemento del Dom q se refiere a favoritod
 
-let link = document.querySelector('.botonfav')
+let link = document.querySelector('.botonfavserie')
 // 5 chequear q el id este en el array para poder cambiar el texto al usuario
 if (SerieFav.includes(id)){
    link.innerText = 'sacar de favoritos' 
